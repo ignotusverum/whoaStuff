@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C5E6795A1408DA00DE13710 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A10D6BE007F82A91EDAA8E /* libPods.a */; };
+		F53D31271A7998AF00917604 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D31261A7998AF00917604 /* InterfaceController.m */; };
+		F53D312A1A7998B000917604 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D31291A7998B000917604 /* NotificationController.m */; };
+		F53D312C1A7998B000917604 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53D312B1A7998B000917604 /* Images.xcassets */; };
+		F53D31301A7998B000917604 /* GroceryApp WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = F53D312F1A7998B000917604 /* GroceryApp WatchKit App.app */; };
+		F53D31381A7998B000917604 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53D31361A7998B000917604 /* Interface.storyboard */; };
+		F53D313A1A7998B000917604 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53D31391A7998B000917604 /* Images.xcassets */; };
+		F53D313D1A7998B000917604 /* GroceryApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F53D31201A7998AF00917604 /* GroceryApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F553957C1A7692E900702340 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F553957B1A7692E900702340 /* main.m */; };
+		F553957F1A7692E900702340 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F553957E1A7692E900702340 /* AppDelegate.m */; };
+		F55395851A7692E900702340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55395831A7692E900702340 /* Main.storyboard */; };
+		F55395871A7692E900702340 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55395861A7692E900702340 /* Images.xcassets */; };
+		F553958A1A7692E900702340 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F55395881A7692E900702340 /* LaunchScreen.xib */; };
+		F55395961A7692E900702340 /* GroceryAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F55395951A7692E900702340 /* GroceryAppTests.m */; };
+		F55395A11A76951D00702340 /* VZGroceryListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55395A01A76951D00702340 /* VZGroceryListController.m */; };
+		F5DA00441A793E9F004F1B7D /* VZGrocerySectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DA00431A793E9F004F1B7D /* VZGrocerySectionsViewController.m */; };
+		F5DA00471A796370004F1B7D /* VZObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DA00461A796370004F1B7D /* VZObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F53D31311A7998B000917604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F553956E1A7692E900702340 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F53D312E1A7998B000917604;
+			remoteInfo = "GroceryApp WatchKit App";
+		};
+		F53D313B1A7998B000917604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F553956E1A7692E900702340 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F53D311F1A7998AF00917604;
+			remoteInfo = "GroceryApp WatchKit Extension";
+		};
+		F55395901A7692E900702340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F553956E1A7692E900702340 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F55395751A7692E900702340;
+			remoteInfo = GroceryApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F53D31441A7998B000917604 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F53D313D1A7998B000917604 /* GroceryApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		36A10D6BE007F82A91EDAA8E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5914C9E0DA1711FCBAA43DF7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F53D31201A7998AF00917604 /* GroceryApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GroceryApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53D31231A7998AF00917604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53D31241A7998AF00917604 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F53D31251A7998AF00917604 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		F53D31261A7998AF00917604 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		F53D31281A7998AF00917604 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		F53D31291A7998B000917604 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		F53D312B1A7998B000917604 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F53D312F1A7998B000917604 /* GroceryApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GroceryApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53D31351A7998B000917604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53D31371A7998B000917604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F53D31391A7998B000917604 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F55395761A7692E900702340 /* GroceryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F553957A1A7692E900702340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F553957B1A7692E900702340 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F553957D1A7692E900702340 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F553957E1A7692E900702340 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F55395841A7692E900702340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F55395861A7692E900702340 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F55395891A7692E900702340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F553958F1A7692E900702340 /* GroceryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroceryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55395941A7692E900702340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F55395951A7692E900702340 /* GroceryAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroceryAppTests.m; sourceTree = "<group>"; };
+		F553959F1A76951D00702340 /* VZGroceryListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZGroceryListController.h; sourceTree = "<group>"; };
+		F55395A01A76951D00702340 /* VZGroceryListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZGroceryListController.m; sourceTree = "<group>"; };
+		F5DA00421A793E9F004F1B7D /* VZGrocerySectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZGrocerySectionsViewController.h; sourceTree = "<group>"; };
+		F5DA00431A793E9F004F1B7D /* VZGrocerySectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZGrocerySectionsViewController.m; sourceTree = "<group>"; };
+		F5DA00451A796370004F1B7D /* VZObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZObject.h; sourceTree = "<group>"; };
+		F5DA00461A796370004F1B7D /* VZObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZObject.m; sourceTree = "<group>"; };
+		F709B479FDAEEEDB2FE59E12 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F53D311D1A7998AF00917604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55395731A7692E900702340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C5E6795A1408DA00DE13710 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F553958C1A7692E900702340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAB7A71745078D72E6CC8D72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F709B479FDAEEEDB2FE59E12 /* Pods.debug.xcconfig */,
+				5914C9E0DA1711FCBAA43DF7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E0D7A5E8C5E43FB89B52B825 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36A10D6BE007F82A91EDAA8E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F53D31211A7998AF00917604 /* GroceryApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F53D31251A7998AF00917604 /* InterfaceController.h */,
+				F53D31261A7998AF00917604 /* InterfaceController.m */,
+				F53D31281A7998AF00917604 /* NotificationController.h */,
+				F53D31291A7998B000917604 /* NotificationController.m */,
+				F53D312B1A7998B000917604 /* Images.xcassets */,
+				F53D31221A7998AF00917604 /* Supporting Files */,
+			);
+			path = "GroceryApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F53D31221A7998AF00917604 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F53D31231A7998AF00917604 /* Info.plist */,
+				F53D31241A7998AF00917604 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F53D31331A7998B000917604 /* GroceryApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F53D31361A7998B000917604 /* Interface.storyboard */,
+				F53D31391A7998B000917604 /* Images.xcassets */,
+				F53D31341A7998B000917604 /* Supporting Files */,
+			);
+			path = "GroceryApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		F53D31341A7998B000917604 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F53D31351A7998B000917604 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F553956D1A7692E900702340 = {
+			isa = PBXGroup;
+			children = (
+				F55395781A7692E900702340 /* GroceryApp */,
+				F55395921A7692E900702340 /* GroceryAppTests */,
+				F53D31211A7998AF00917604 /* GroceryApp WatchKit Extension */,
+				F53D31331A7998B000917604 /* GroceryApp WatchKit App */,
+				F55395771A7692E900702340 /* Products */,
+				AAB7A71745078D72E6CC8D72 /* Pods */,
+				E0D7A5E8C5E43FB89B52B825 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F55395771A7692E900702340 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F55395761A7692E900702340 /* GroceryApp.app */,
+				F553958F1A7692E900702340 /* GroceryAppTests.xctest */,
+				F53D31201A7998AF00917604 /* GroceryApp WatchKit Extension.appex */,
+				F53D312F1A7998B000917604 /* GroceryApp WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F55395781A7692E900702340 /* GroceryApp */ = {
+			isa = PBXGroup;
+			children = (
+				F553957D1A7692E900702340 /* AppDelegate.h */,
+				F553957E1A7692E900702340 /* AppDelegate.m */,
+				F553959F1A76951D00702340 /* VZGroceryListController.h */,
+				F55395A01A76951D00702340 /* VZGroceryListController.m */,
+				F5DA00421A793E9F004F1B7D /* VZGrocerySectionsViewController.h */,
+				F5DA00431A793E9F004F1B7D /* VZGrocerySectionsViewController.m */,
+				F5DA00481A7963A2004F1B7D /* Model */,
+				F55395831A7692E900702340 /* Main.storyboard */,
+				F55395861A7692E900702340 /* Images.xcassets */,
+				F55395881A7692E900702340 /* LaunchScreen.xib */,
+				F55395791A7692E900702340 /* Supporting Files */,
+			);
+			path = GroceryApp;
+			sourceTree = "<group>";
+		};
+		F55395791A7692E900702340 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F553957A1A7692E900702340 /* Info.plist */,
+				F553957B1A7692E900702340 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F55395921A7692E900702340 /* GroceryAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F55395951A7692E900702340 /* GroceryAppTests.m */,
+				F55395931A7692E900702340 /* Supporting Files */,
+			);
+			path = GroceryAppTests;
+			sourceTree = "<group>";
+		};
+		F55395931A7692E900702340 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F55395941A7692E900702340 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5DA00481A7963A2004F1B7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5DA00451A796370004F1B7D /* VZObject.h */,
+				F5DA00461A796370004F1B7D /* VZObject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F53D311F1A7998AF00917604 /* GroceryApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53D31431A7998B000917604 /* Build configuration list for PBXNativeTarget "GroceryApp WatchKit Extension" */;
+			buildPhases = (
+				F53D311C1A7998AF00917604 /* Sources */,
+				F53D311D1A7998AF00917604 /* Frameworks */,
+				F53D311E1A7998AF00917604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F53D31321A7998B000917604 /* PBXTargetDependency */,
+			);
+			name = "GroceryApp WatchKit Extension";
+			productName = "GroceryApp WatchKit Extension";
+			productReference = F53D31201A7998AF00917604 /* GroceryApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		F53D312E1A7998B000917604 /* GroceryApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53D31421A7998B000917604 /* Build configuration list for PBXNativeTarget "GroceryApp WatchKit App" */;
+			buildPhases = (
+				F53D312D1A7998B000917604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GroceryApp WatchKit App";
+			productName = "GroceryApp WatchKit App";
+			productReference = F53D312F1A7998B000917604 /* GroceryApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+		F55395751A7692E900702340 /* GroceryApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F55395991A7692E900702340 /* Build configuration list for PBXNativeTarget "GroceryApp" */;
+			buildPhases = (
+				E9D4F7086812A7F06C2E605C /* Check Pods Manifest.lock */,
+				F55395721A7692E900702340 /* Sources */,
+				F55395731A7692E900702340 /* Frameworks */,
+				F55395741A7692E900702340 /* Resources */,
+				0457122F3624169E6E1BAA2D /* Copy Pods Resources */,
+				F53D31441A7998B000917604 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F53D313C1A7998B000917604 /* PBXTargetDependency */,
+			);
+			name = GroceryApp;
+			productName = GroceryApp;
+			productReference = F55395761A7692E900702340 /* GroceryApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F553958E1A7692E900702340 /* GroceryAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F553959C1A7692E900702340 /* Build configuration list for PBXNativeTarget "GroceryAppTests" */;
+			buildPhases = (
+				F553958B1A7692E900702340 /* Sources */,
+				F553958C1A7692E900702340 /* Frameworks */,
+				F553958D1A7692E900702340 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F55395911A7692E900702340 /* PBXTargetDependency */,
+			);
+			name = GroceryAppTests;
+			productName = GroceryAppTests;
+			productReference = F553958F1A7692E900702340 /* GroceryAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F553956E1A7692E900702340 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = VZ;
+				TargetAttributes = {
+					F53D311F1A7998AF00917604 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					F53D312E1A7998B000917604 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					F55395751A7692E900702340 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					F553958E1A7692E900702340 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = F55395751A7692E900702340;
+					};
+				};
+			};
+			buildConfigurationList = F55395711A7692E900702340 /* Build configuration list for PBXProject "GroceryApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F553956D1A7692E900702340;
+			productRefGroup = F55395771A7692E900702340 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F55395751A7692E900702340 /* GroceryApp */,
+				F553958E1A7692E900702340 /* GroceryAppTests */,
+				F53D311F1A7998AF00917604 /* GroceryApp WatchKit Extension */,
+				F53D312E1A7998B000917604 /* GroceryApp WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F53D311E1A7998AF00917604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53D31301A7998B000917604 /* GroceryApp WatchKit App.app in Resources */,
+				F53D312C1A7998B000917604 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53D312D1A7998B000917604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53D31381A7998B000917604 /* Interface.storyboard in Resources */,
+				F53D313A1A7998B000917604 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55395741A7692E900702340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55395851A7692E900702340 /* Main.storyboard in Resources */,
+				F553958A1A7692E900702340 /* LaunchScreen.xib in Resources */,
+				F55395871A7692E900702340 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F553958D1A7692E900702340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0457122F3624169E6E1BAA2D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9D4F7086812A7F06C2E605C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F53D311C1A7998AF00917604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53D312A1A7998B000917604 /* NotificationController.m in Sources */,
+				F53D31271A7998AF00917604 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F55395721A7692E900702340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55395A11A76951D00702340 /* VZGroceryListController.m in Sources */,
+				F553957F1A7692E900702340 /* AppDelegate.m in Sources */,
+				F5DA00441A793E9F004F1B7D /* VZGrocerySectionsViewController.m in Sources */,
+				F5DA00471A796370004F1B7D /* VZObject.m in Sources */,
+				F553957C1A7692E900702340 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F553958B1A7692E900702340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55395961A7692E900702340 /* GroceryAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F53D31321A7998B000917604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F53D312E1A7998B000917604 /* GroceryApp WatchKit App */;
+			targetProxy = F53D31311A7998B000917604 /* PBXContainerItemProxy */;
+		};
+		F53D313C1A7998B000917604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F53D311F1A7998AF00917604 /* GroceryApp WatchKit Extension */;
+			targetProxy = F53D313B1A7998B000917604 /* PBXContainerItemProxy */;
+		};
+		F55395911A7692E900702340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F55395751A7692E900702340 /* GroceryApp */;
+			targetProxy = F55395901A7692E900702340 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F53D31361A7998B000917604 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F53D31371A7998B000917604 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		F55395831A7692E900702340 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F55395841A7692E900702340 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F55395881A7692E900702340 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F55395891A7692E900702340 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F53D313E1A7998B000917604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GroceryApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F53D313F1A7998B000917604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "GroceryApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F53D31401A7998B000917604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = GroceryApp_WatchKit_Extension;
+				INFOPLIST_FILE = "GroceryApp WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		F53D31411A7998B000917604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = GroceryApp_WatchKit_Extension;
+				INFOPLIST_FILE = "GroceryApp WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		F55395971A7692E900702340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F55395981A7692E900702340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F553959A1A7692E900702340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F709B479FDAEEEDB2FE59E12 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GroceryApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F553959B1A7692E900702340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5914C9E0DA1711FCBAA43DF7 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GroceryApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F553959D1A7692E900702340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GroceryAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroceryApp.app/GroceryApp";
+			};
+			name = Debug;
+		};
+		F553959E1A7692E900702340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GroceryAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GroceryApp.app/GroceryApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F53D31421A7998B000917604 /* Build configuration list for PBXNativeTarget "GroceryApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53D31401A7998B000917604 /* Debug */,
+				F53D31411A7998B000917604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F53D31431A7998B000917604 /* Build configuration list for PBXNativeTarget "GroceryApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53D313E1A7998B000917604 /* Debug */,
+				F53D313F1A7998B000917604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F55395711A7692E900702340 /* Build configuration list for PBXProject "GroceryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F55395971A7692E900702340 /* Debug */,
+				F55395981A7692E900702340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F55395991A7692E900702340 /* Build configuration list for PBXNativeTarget "GroceryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F553959A1A7692E900702340 /* Debug */,
+				F553959B1A7692E900702340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F553959C1A7692E900702340 /* Build configuration list for PBXNativeTarget "GroceryAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F553959D1A7692E900702340 /* Debug */,
+				F553959E1A7692E900702340 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F553956E1A7692E900702340 /* Project object */;
+}
