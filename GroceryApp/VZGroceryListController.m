@@ -12,7 +12,9 @@
 #import "VZGrocerySectionsViewController.h"
 
 @interface VZGroceryListController () <VZGrocerySectionDelegate> {
-    NSMutableDictionary * arrayOfSections;
+    NSMutableDictionary * dictionaryOfSections;
+    NSMutableArray * arrayOfSections;
+    NSMutableArray * mutableTest;
 }
 
 @end
@@ -23,7 +25,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    arrayOfSections = [@{} mutableCopy];
+    mutableTest = [@[] mutableCopy];
+    arrayOfSections = [@[] mutableCopy];
+    dictionaryOfSections = [@{} mutableCopy];
 }
 
 
@@ -32,7 +36,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return arrayOfSections.allKeys.count;
+    return dictionaryOfSections.allKeys.count;
 }
 
 
@@ -42,14 +46,14 @@
     
     int numberOfSections = 0;
     
-    NSArray * allKeys = arrayOfSections.allKeys;
+    NSArray * allKeys = dictionaryOfSections.allKeys;
     
     if(allKeys.count >= section) {
         keyForDict = allKeys[section];
     }
     
-    if(arrayOfSections[keyForDict]) {
-        numberOfSections = (int)((NSArray *)arrayOfSections[keyForDict]).count;
+    if(dictionaryOfSections[keyForDict]) {
+        numberOfSections = (int)((NSArray *)dictionaryOfSections[keyForDict]).count;
     }
     
     return numberOfSections;
@@ -63,14 +67,14 @@
     
     NSString * keyForDict = @"";
     
-    NSArray * allKeys = arrayOfSections.allKeys;
+    NSArray * allKeys = dictionaryOfSections.allKeys;
     
     if(allKeys.count >= indexPath.section) {
         keyForDict = allKeys[indexPath.section];
     }
     
-    if(arrayOfSections[keyForDict]) {
-        VZObject * objectForCell = (VZObject *)((NSArray *)(arrayOfSections[keyForDict])[indexPath.row]);
+    if(dictionaryOfSections[keyForDict]) {
+        VZObject * objectForCell = (VZObject *)((NSArray *)(dictionaryOfSections[keyForDict])[indexPath.row]);
         cell.textLabel.text = objectForCell.objectName;
     }
     
@@ -120,19 +124,61 @@
 }
 
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 40;
+}
+
+
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    NSArray * allKeys = dictionaryOfSections.allKeys;
+//    return allKeys[section];
+//}
+
+
 - (void) addObject:(VZObject *)object
 {
-    NSString * keyForDict = [self getKeyForDictWithPriority:object.objectPriority];
+    NSMutableArray * innerArray = [NSMutableArray new];
     
-    if(arrayOfSections[keyForDict]) {
-        NSMutableArray * innerArray = arrayOfSections[keyForDict];
+    if(dictionaryOfSections[object.objectPriority]) {
+        innerArray = dictionaryOfSections[object.objectPriority];
         [innerArray addObject:object];
-        arrayOfSections[keyForDict] = innerArray;
+        dictionaryOfSections[object.objectPriority] = innerArray;
     } else {
-        arrayOfSections[keyForDict] = [@[object] mutableCopy];
+        dictionaryOfSections[object.objectPriority] = [@[object] mutableCopy];
     }
     
-    [self.tableView reloadData];
+    [mutableTest addObject:object];
+    
+    if(mutableTest.count > 1) {
+        NSMutableArray * testArray = [NSMutableArray new];
+        
+        [[mutableTest valueForKeyPath:@"@distinctUnionOfObjects.self"] enumerateObjectsUsingBlock:^(NSNumber * number, NSUInteger idx, BOOL *stop) { // change to number
+            NSIndexSet *indexSet = [mutableTest indexesOfObjectsPassingTest:^BOOL(NSNumber * n, NSUInteger idx, BOOL *stop) {
+                return [n isEqual:number];
+            }];
+            
+            [testArray addObject:[[mutableTest objectsAtIndexes:indexSet] mutableCopy]];
+        }];
+        
+        NSArray * sortedDatesArray = [testArray sortedArrayUsingComparator:^(id a, id b) { // change to number
+            
+            NSNumber * res1;
+            NSNumber * res2;
+            
+            res1 = ((VZObject *)[b objectAtIndex:0]).objectPriority;
+            res2 = ((VZObject *)[a objectAtIndex:0]).objectPriority;
+            
+            return [res2 compare:res1];
+        }];
+        
+        arrayOfSections = [sortedDatesArray mutableCopy];
+    }
+    
+    NSLog(@"array of sections is %@",arrayOfSections);//update data structure with this array
+
+    [self.tableView reloadData]; // TODO: insert row with animation
 }
 
 

@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9C5E6795A1408DA00DE13710 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A10D6BE007F82A91EDAA8E /* libPods.a */; };
-		F53D31271A7998AF00917604 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D31261A7998AF00917604 /* InterfaceController.m */; };
 		F53D312A1A7998B000917604 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D31291A7998B000917604 /* NotificationController.m */; };
 		F53D312C1A7998B000917604 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53D312B1A7998B000917604 /* Images.xcassets */; };
 		F53D31301A7998B000917604 /* GroceryApp WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = F53D312F1A7998B000917604 /* GroceryApp WatchKit App.app */; };
 		F53D31381A7998B000917604 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53D31361A7998B000917604 /* Interface.storyboard */; };
 		F53D313A1A7998B000917604 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53D31391A7998B000917604 /* Images.xcassets */; };
 		F53D313D1A7998B000917604 /* GroceryApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F53D31201A7998AF00917604 /* GroceryApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F53D31471A7999E300917604 /* VZMainListInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D31461A7999E300917604 /* VZMainListInterfaceController.m */; };
+		F53D314A1A79A17E00917604 /* VZPostRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53D31491A79A17E00917604 /* VZPostRowController.m */; };
 		F553957C1A7692E900702340 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F553957B1A7692E900702340 /* main.m */; };
 		F553957F1A7692E900702340 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F553957E1A7692E900702340 /* AppDelegate.m */; };
 		F55395851A7692E900702340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55395831A7692E900702340 /* Main.storyboard */; };
@@ -70,8 +71,6 @@
 		F53D31201A7998AF00917604 /* GroceryApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GroceryApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F53D31231A7998AF00917604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F53D31241A7998AF00917604 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		F53D31251A7998AF00917604 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
-		F53D31261A7998AF00917604 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
 		F53D31281A7998AF00917604 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
 		F53D31291A7998B000917604 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		F53D312B1A7998B000917604 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -79,6 +78,10 @@
 		F53D31351A7998B000917604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F53D31371A7998B000917604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		F53D31391A7998B000917604 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F53D31451A7999E300917604 /* VZMainListInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZMainListInterfaceController.h; sourceTree = "<group>"; };
+		F53D31461A7999E300917604 /* VZMainListInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZMainListInterfaceController.m; sourceTree = "<group>"; };
+		F53D31481A79A17E00917604 /* VZPostRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZPostRowController.h; sourceTree = "<group>"; };
+		F53D31491A79A17E00917604 /* VZPostRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZPostRowController.m; sourceTree = "<group>"; };
 		F55395761A7692E900702340 /* GroceryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F553957A1A7692E900702340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F553957B1A7692E900702340 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -145,10 +148,12 @@
 		F53D31211A7998AF00917604 /* GroceryApp WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F53D31251A7998AF00917604 /* InterfaceController.h */,
-				F53D31261A7998AF00917604 /* InterfaceController.m */,
+				F53D31451A7999E300917604 /* VZMainListInterfaceController.h */,
+				F53D31461A7999E300917604 /* VZMainListInterfaceController.m */,
 				F53D31281A7998AF00917604 /* NotificationController.h */,
 				F53D31291A7998B000917604 /* NotificationController.m */,
+				F53D31481A79A17E00917604 /* VZPostRowController.h */,
+				F53D31491A79A17E00917604 /* VZPostRowController.m */,
 				F53D312B1A7998B000917604 /* Images.xcassets */,
 				F53D31221A7998AF00917604 /* Supporting Files */,
 			);
@@ -456,7 +461,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F53D312A1A7998B000917604 /* NotificationController.m in Sources */,
-				F53D31271A7998AF00917604 /* InterfaceController.m in Sources */,
+				F53D314A1A79A17E00917604 /* VZPostRowController.m in Sources */,
+				F53D31471A7999E300917604 /* VZMainListInterfaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,6 +734,7 @@
 				F53D31411A7998B000917604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F53D31431A7998B000917604 /* Build configuration list for PBXNativeTarget "GroceryApp WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -736,6 +743,7 @@
 				F53D313F1A7998B000917604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F55395711A7692E900702340 /* Build configuration list for PBXProject "GroceryApp" */ = {
 			isa = XCConfigurationList;
